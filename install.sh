@@ -11,4 +11,4 @@ docker run --rm --privileged -v \$(pwd):/build ${IMAGE_NAME} \$@
 EOF
 
 chmod ugo+x /tmp/${TOOLCHAIN_SCRIPT}.tmp
-sudo mv /tmp/${TOOLCHAIN_SCRIPT}.tmp /bin/${TOOLCHAIN_SCRIPT}
+sudo mv /tmp/${TOOLCHAIN_SCRIPT}.tmp /usr/bin/${TOOLCHAIN_SCRIPT}
