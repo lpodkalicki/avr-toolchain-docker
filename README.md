@@ -1,10 +1,10 @@
 # Overview
 
-Lightweight docker image built on top of **alpine:3.10** with installed AVR toolchain and few additional tools:
-* AVR8 toolchain (2019, AVR_8_bit_GNU_Toolchain_3.6.2_1759)
-* avrdude (v6.3)
-* make (v4.2)
-* cmake (v3.14)
+Lightweight docker image built on top of **alpine** with installed AVR toolchain and few additional tools:
+* newst AVR8 toolchain
+* avrdude
+* make
+* cmake
 
 DockerHub: https://hub.docker.com/r/lpodkalicki/avr-toolchain
 
@@ -44,5 +44,6 @@ $ avr-toolchain avr-gcc --version
 $ avr-toolchain make -version
 $ avr-toolchain avrdude --help
 $ avr-toolchain cmake -version
-$ avr-toolchain make && make flash
+$ avr-toolchain make
+$ avr-toolchain flash
 ```

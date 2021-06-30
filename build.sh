@@ -1,3 +1,5 @@
 #!/bin/bash
 
-docker build --rm -t lpodkalicki/avr-toolchain:latest .
+TAG=${TAG:-latest}
+
+docker build --rm -t lpodkalicki/avr-toolchain:${TAG} .
