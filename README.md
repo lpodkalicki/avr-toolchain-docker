@@ -1,7 +1,8 @@
 # Overview
 
 Lightweight docker image built on top of **alpine** with installed AVR toolchain and few additional tools:
-* newst AVR8 toolchain
+* avr-gcc toolchain (>= v10)
+* avr-libc
 * avrdude
 * make
 * cmake
