@@ -20,7 +20,7 @@ docker build --rm -t lpodkalicki/avr-toolchain:latest .
 ## An example of running toolchain binary
 
 ```bash
-docker run --rm --privileged -v $(pwd):/build lpodkalicki/avr-toolchain avr-gcc -version
+docker run --rm --privileged -v $(pwd):/build lpodkalicki/avr-toolchain avr-gcc --version
 ```
 
 # Installing
