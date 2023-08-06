@@ -1,7 +1,7 @@
 # Overview
 
 Lightweight docker image built on top of **alpine** with installed AVR toolchain and few additional tools:
-* avr-gcc toolchain (>= v10)
+* avr-gcc toolchain (>= v12)
 * avr-libc
 * avrdude
 * make
@@ -48,3 +48,7 @@ $ avr-toolchain cmake -version
 $ avr-toolchain make
 $ avr-toolchain flash
 ```
+
+## GCC warnings
+
+To avoid the [Wrong warning array subscript [0] is outside array bounds](https://gcc.gnu.org/bugzilla/show_bug.cgi?id=105523), set gcc `--param=min-pagesize=0`.

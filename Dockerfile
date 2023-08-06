@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:3.18
 
 MAINTAINER Lukasz Marcin Podkalicki <lpodkalicki@gmail.com>
 
